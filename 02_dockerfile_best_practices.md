@@ -61,7 +61,7 @@ Dockerイメージに含まれるファイルの内容が検査され、個々�
 
 ## RUNコマンド
 
-### apt-get
+### パッケージインストール
 
 `RUN apt-get update`と`apt-get install`は、同一の`RUN`コマンド内にて実行する。
 
@@ -129,6 +129,6 @@ docker_performance_tuning_ubuntu   latest          265129d6fc5e   11 seconds ago
 
 `ADD`と`COPY`の機能は似ていますが、`COPY`は単にローカルファイルをコンテナにコピーするだけなのに対し、`ADD`はtar展開やリモートURL先ファイルをコピーします。
 
-`ADD`でリモートURL先ファイルを取得するとDockerイメージからファイルを削除することができなくなるので、代わりに`curl`か`wget`を利用してください。
+`ADD`でリモートURL先ファイルを取得するとDockerイメージからファイルを削除できなくなるので、代わりに`curl`か`wget`を利用してください。
 
 `ADD`の自動展開機能を必要としないものに対しては、常に`COPY`を使うようにしてください。

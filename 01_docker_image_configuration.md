@@ -28,7 +28,7 @@ IMAGE          CREATED       CREATED BY                                      SIZ
 
 下記はDockerfileからビルドされたDockerイメージのレイヤーの履歴です。
 
-2コマンド分のレイヤーが生成されていることが確認できます。また、`dd`コマンドでダミーファイルを1MB作成した為、レイヤーの`SIZE`が約1MBになっているのが確認できます。
+2コマンド分のレイヤーが生成されていることが確認できます。また、`dd`コマンドでダミーファイルを1MB作成したため、レイヤーの`SIZE`が約1MBになっているのが確認できます。
 
 ```
 $ docker history docker_performance_tuning_ubuntu:latest
